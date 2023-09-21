@@ -5,8 +5,6 @@ The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit int
 
 You must write an algorithm that runs in O(n) time and without using the division operation.
 
- 
-
 Example 1:
 
 Input: nums = [1,2,3,4]
@@ -18,7 +16,6 @@ Input: nums = [-1,1,0,-3,3]
 Output: [0,0,9,0,0]
 
  
-
 Constraints:
 
 
@@ -28,3 +25,14 @@ The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit int
  
  * 
  */
+
+let arr = [-1,1,0,-3,3];
+
+const ProductExceptSelf = (nums) => {
+   for(let i = 0; i < nums.length;i++){
+        for(let j = i+1; j< nums.length;j++){
+            console.log(j*nums[i]);
+        }
+   }
+}
+ProductExceptSelf(arr)
