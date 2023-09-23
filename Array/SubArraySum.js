@@ -13,7 +13,6 @@ function vfv(arr) {
   }
 }
 vfv(arr);
-// console.log(finalArr, "finalArr");
 
 // vfv(arr);
 // function subarray(arr) {
